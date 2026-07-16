@@ -1,104 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Integrales Cerén Gálvez</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #0d47a1;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .section {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0d47a1;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-        .contact-btn {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 0.7rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-
-            /* Ajustes para pantallas de celulares */
-    @media (max-width: 600px) {
-        h1 {
-            font-size: 1.8rem;
-        }
-        header {
-            padding: 1.5rem 1rem;
-        }
-        .container, section, div {
-            margin: 10px;
-            padding: 15px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Integrales Cerén Gálvez</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
     }
-        
-    </style>
+    header {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0d47a1;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    .contact-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Ajustes para pantallas de celulares */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      header {
+        padding: 1.5rem 1rem;
+      }
+      .container, .section, div {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Servicios Integrales Cerén Gálvez</h1>
-        <p>Mantenimiento de máquinas de coser y consultoría de negocios</p>
-    </header>
+  <header>
+    <h1>Servicios Integrales Cerén Gálvez</h1>
+    <p>Mantenimiento de máquinas de coser y consultoría de negocios</p>
+  </header>
 
-    <main>
-        <div class="section">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li><strong>Mantenimiento y reparación:</strong> Especialistas en máquinas de coser industriales y domésticas.</li>
-                <li><strong>Asesoría Empresarial:</strong> Consultoría para ayudarte a estructurar y hacer crecer tu negocio.</li>
-            </ul>
+  <main>
+    <div class="section">
+      <h2>Nuestros Servicios</h2>
+      <ul>
+        <li><strong>Mantenimiento y reparación:</strong> Especialistas en máquinas de coser industriales y domésticas.</li>
+        <li><strong>Asesoría Empresarial:</strong> Consultoría para ayudarte a estructurar y hacer crecer tu negocio.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contacto</h2>
+      <p>¿Necesitas mantenimiento para tu equipo o una asesoría de negocios? ¡Contáctanos hoy mismo!</p>
+      <p><strong>Teléfono:</strong> 7288-8079</p>
+      <a href="https://wa.me/50372888079" class="contact-btn" target="_blank">Contactar por WhatsApp</a>
+    </div>
+
+    <!-- NUEVO FORMULARIO DE COTIZACIÓN -->
+    <div class="section" style="margin-top: 30px;">
+      <h2 style="color: #0d47a1; text-align: center; margin-bottom: 15px; border-bottom: none;">Solicitar Cotización</h2>
+      <p style="text-align: center; color: #555; margin-bottom: 25px;">
+        Completa los datos y te enviaremos un presupuesto personalizado para tu negocio.
+      </p>
+
+      <!-- Formulario conectado a Netlify -->
+      <form name="cotizador-servicios" method="POST" data-netlify="true" style="max-width: 500px; margin: 0 auto; text-align: left;">
+        
+        <!-- Campo oculto para Netlify -->
+        <input type="hidden" name="form-name" value="cotizador-servicios" />
+
+        <!-- Nombre -->
+        <div style="margin-bottom: 15px;">
+          <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
         </div>
 
-        <div class="section">
-            <h2>Contacto</h2>
-            <p>¿Necesitas mantenimiento para tu equipo o una asesoría de negocios? ¡Contáctanos hoy mismo!</p>
-            <p><strong>Teléfono:</strong> 7288-8079</p>
-            <!-- Puedes cambiar este enlace con tu número de WhatsApp real para que te escriban directamente -->
-            <a href="https://wa.me/50372888079" class="contact-btn" target="_blank">Contactar por WhatsApp</a>
+        <!-- WhatsApp -->
+        <div style="margin-bottom: 15px;">
+          <label for="whatsapp" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">WhatsApp / Teléfono:</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ej. 7000-0000" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
         </div>
-    </main>
+
+        <!-- Servicio -->
+        <div style="margin-bottom: 15px;">
+          <label for="servicio" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">¿Qué servicio deseas cotizar?</label>
+          <select id="servicio" name="servicio" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; background-color: #fff; height: 40px;">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="mantenimiento-maquinas">🧵 Mantenimiento de Máquinas de Coser</option>
+            <option value="consultoria-negocios">💼 Consultoría y Asesoría de Negocios</option>
+            <option value="ambos">✨ Ambos Servicios</option>
+          </select>
+        </div>
+
+        <!-- Detalles -->
+        <div style="margin-bottom: 20px;">
+          <label for="detalles" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Cuéntanos los detalles de lo que necesitas:</label>
+          <textarea id="detalles" name="detalles" rows="4" placeholder="Ej. Detalles de la máquina o necesidades de tu negocio..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical; font-family: inherit;"></textarea>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit" class="contact-btn" style="width: 100%; border: none; padding: 12px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; display: block; text-align: center; background-color: #0d47a1; margin-top: 0;">
+          Enviar Solicitud
+        </button>
+
+      </form>
+    </div>
+
+  </main>
+  </main>
+
+<section id="blog" class="blog-section">
+    <h2>Consejos Prácticos para tus Máquinas</h2>
+    <p class="blog-intro">Aprende a cuidar tus equipos de costura con estos sencillos pasos de mantenimiento preventivo.</p>
+
+    <div class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="blog-card">
+            <div class="blog-content">
+                <span class="blog-tag">Mantenimiento</span>
+                <h3>¿Por qué se rompe el hilo? 3 causas comunes</h3>
+                <p>Si tu máquina corta el hilo constantemente, la solución suele ser sencilla. Revisa la tensión, asegúrate de que la aguja esté colocada correctamente y comprueba que sea del calibre adecuado para la tela que estás cosiendo.</p>
+            </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="blog-card">
+            <div class="blog-content">
+                <span class="blog-tag">Limpieza</span>
+                <h3>Cómo limpiar la bobina paso a paso</h3>
+                <p>La acumulación de pelusa bajo la placa de aguja es el enemigo número uno de las costuras perfectas. Te enseñamos a retirar los residuos y aplicar lubricación de forma segura para evitar antes de que se presenten atascos mecánicos.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
 
     <footer>
-        <p>&copy; 2026 Servicios Integrales Cerén Gálvez. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Servicios Integrales Cerén Gálvez. Todos los derechos reservados.</p>
     </footer>
 
-</body>
+    <script>
+      document.querySelector('form[name="cotizador-servicios"]').addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const whatsappCliente = document.getElementById("whatsapp").value.trim();
+        const servicioSelect = document.getElementById("servicio");
+        const servicioTexto = servicioSelect.options[servicioSelect.selectedIndex].text;
+        const detallesInput = document.getElementById("detalles");
+        const detalles = detallesInput ? detallesInput.value.trim() : "Sin detalles";
+
+        const miNumero = "50372888079"; 
+
+        const mensaje = `*Nueva Solicitud de Cotización*%0A%0A` +
+                        `*Nombre:* ${nombre}%0A` +
+                        `*WhatsApp/Teléfono:* ${whatsappCliente}%0A` +
+                        `*Servicio solicitado:* ${servicioTexto}%0A%0A` +
+                        `*Detalles del requerimiento:*%0A${detalles}`;
+
+        const urlWhatsApp = `https://wa.me/${miNumero}?text=${mensaje}`;
+
+        window.open(urlWhatsApp, "_blank");
+        e.target.reset();
+      });
+    </script>
+
+  </body>
 </html>
+
+
